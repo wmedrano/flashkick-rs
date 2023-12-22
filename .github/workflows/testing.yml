@@ -19,7 +19,7 @@ jobs:
           sudo apt-get -y install guile-3.0-dev
       - name: Install Rust Test Tools
         run: |
-          # Installs nexte.st
+          # Installs nexte.st for nicer test output.
           curl -LsSf https://get.nexte.st/latest/linux | tar zxf - -C ${CARGO_HOME:-~/.cargo}/bin
       - name: Rust Cache
         uses: Swatinem/rust-cache@v1
