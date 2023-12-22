@@ -13,6 +13,10 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get -y install guile-3.0-dev
       - name: Rust Cache
         uses: Swatinem/rust-cache@v1
       - name: Build
