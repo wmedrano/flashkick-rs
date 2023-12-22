@@ -5,7 +5,7 @@ use std::env;
 use std::path::PathBuf;
 
 fn main() {
-    let conf = pkg_config::probe_library("guile-3.0").unwrap();
+    let conf = pkg_config::probe_library("guile-3.0").expect("Could not find guile3 dev library.");
     println!("cargo:rerun-if-changed=build.rs");
     println!("cargo:rustc-link-lib=guile-3.0");
     println!("cargo:rerun-if-changed=wrapper.h");
