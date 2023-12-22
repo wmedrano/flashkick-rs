@@ -1,7 +1,9 @@
 [package]
 name = "flashkick"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
+homepage = "https://github.com/wmedrano/flashkick-rs"
+repositor = "https://github.com/wmedrano/flashkick-rs"
 description = "Wrapper for GNU Guile Scheme."
 license = "LGPL-3.0-only"
 
